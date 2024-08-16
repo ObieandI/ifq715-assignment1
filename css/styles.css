@@ -372,3 +372,13 @@ section {
     border-color: #507C74;
     color: white;
 }
+
+.product-section {
+    width: 90%;
+    margin: 0 auto; /* Center the section horizontally */
+    background-color: white !important;
+}
+
+.product-container {
+    background-color: #F4EFEA !important;
+}
