@@ -1,0 +1,374 @@
+/* General Image Styles */
+.image, .img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Specific Logo and Brand Image Sizes */
+.logo-image {
+    max-width: 4rem; /* 100px to rem */
+    height: auto;
+}
+
+.brand-image {
+    max-width: 6rem; /* 200px to rem */
+    height: auto;
+}
+
+#logo {
+    border-right: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+/* Nav Styling */
+nav {
+    background-color: #F4EFEA; /* Soft beige */
+    border-bottom: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    gap: 2rem; /* Adjust spacing between the nav items */
+    list-style-type: none; /* Remove bullets from list */
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #324147 !important; /* Dark teal */
+    font-weight: 200;
+    text-transform: none; /* Keep original text case */
+    padding-bottom: 0.5rem;
+    position: relative;
+    gap: 1rem;
+}
+
+.link:hover,
+.link.active {
+    text-decoration: none; /* Remove underline on hover */
+    color: #324147; /* Dark teal */
+}
+
+.link:hover::after,
+.link.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem; /* 2px to rem */
+    background-color: #324147; /* Dark teal */
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Other Standards */
+
+.paragraph {
+    font-size: 0.65rem; /* 9pt to rem */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+
+/* Section Divider Styles */
+
+#landing-image {
+    border-bottom: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+.sale-section {
+    border-bottom: 0.0625rem solid #e0e0e0; /* 1px to rem */
+    padding: 2rem 0;
+}
+
+.footer-section {
+    padding-top: 2rem;
+    border-top: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+
+/* Custom Button Styles */
+.btn-custom {
+    background-color: #5A7D7C !important; /* Ocean-inspired green */
+    border-color: #5A7D7C !important; /* Custom border color */
+    color: white !important; /* Text color */
+    position: absolute;
+    opacity: 75%;
+    bottom: 1.5rem; /* Position the button at the bottom of the container */
+    transform: translateX(-50%);
+    border-radius: 0% !important;
+}
+
+.btn-custom:hover {
+    background-color: #324147 !important; /* Dark teal on hover */
+    border-color: #324147 !important;
+    color: white !important;
+    opacity: 100%;
+}
+
+
+/* Button Styles */
+.btn-sale {
+    background-color: #5A7D7C !important; /* Ocean-inspired green */
+    border-color: #5A7D7C !important;
+    color: white !important;
+    margin-top: 0.9375rem; /* 15px to rem */
+}
+
+.btn-sale:hover {
+    background-color: #324147 !important; /* Dark teal on hover */
+    border-color: #324147 !important;
+    color: white !important;
+}
+
+
+/* Sale Product Styles */
+.sale-product-inner {
+    background-color: #F4EFEA; /* Soft beige */
+    padding: 0.5rem;
+    text-align: center;
+    border: 0.0625rem solid #e0e0e0; /* 1px to rem */
+    border-radius: 0.25rem; /* 4px to rem */
+    overflow: hidden; /* Prevent overflow from child elements */
+}
+
+.sale-product img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: auto;
+    display: block;
+}
+
+
+/* Product Info Section*/
+.product-info {
+    padding: 0.9375rem; /* 15px to rem */
+    background-color: #FFF; /* White background for the product info */
+}
+
+.product-color {
+    font-size: 0.875rem; /* 14px to rem */
+    color: #888; /* Grey color for less emphasis */
+    margin-bottom: 0.625rem; /* 10px to rem */
+    border-bottom: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+.product-title {
+    font-size: 1rem; /* 16px to rem */
+    color: #324147; /* Dark teal */
+    margin: 0.625rem 0; /* 10px to rem */
+}
+
+.product-price {
+    font-size: 1.125rem; /* 18px to rem */
+    color: #324147; /* Dark teal */
+    font-weight: bold;
+    margin-top: 0.625rem; /* 10px to rem */
+}
+
+
+/* Categories Section*/
+.categories-section {
+    background-color: #F4EFEA; /* Light background to match the theme */
+    border-top: 0.0625rem solid #e0e0e0; /* 1px to rem */
+}
+
+.category-item {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.category-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin-top: 1rem;
+}
+
+.btn-category {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 5rem 0;
+    background-color: #F4EFEA !important; /* Light grey background for the section */
+}
+
+.about-us .container {
+    max-width: 1200px;
+}
+
+.about-image {
+    max-width: 100%;
+    border: 1px solid #ddd; /* Light border around the image */
+    padding: 5px;
+}
+
+.btn-back-to-top {
+    background-color: #5A7D7C !important;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.btn-back-to-top:hover {
+    background-color: #324147 !important; /* Darker green on hover */
+}
+
+/* Subscription Section */
+.subscription-section {
+    padding-top: 3rem; /* Add space above the subscription section */
+    background-color: #f5f5f5; /* This will give a soft contrast background */
+}
+
+.subscription-title {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #324147; /* Dark teal */
+    text-transform: uppercase;
+}
+
+.subscription-form {
+    max-width: 700px; /* Limit the width of the form */
+}
+
+.subscription-form input {
+    border: 2px solid #324147; /* Dark teal border for inputs */
+    padding: 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.subscription-form .form-control::placeholder {
+    color: #B3B9C2; /* Soft grey placeholder text */
+    font-weight: bold;
+}
+
+.subscription-btn {
+    background-color: #5A7D7C !important; /* Ocean-inspired green */
+    border-color: #5A7D7C !important;
+    color: white !important; /* White text */
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.subscription-btn:hover {
+    background-color: #324147 !important; /* Dark teal on hover */
+}
+
+.disclaimer {
+    font-size: 0.875rem; /* Adjust size as needed */
+    color: #324147; /* Dark teal */
+    margin-top: 1rem;
+}
+
+.disclaimer a {
+    color: #324147; /* Dark teal */
+    text-decoration: underline;
+}
+
+
+/* PRODUCT INFORMATION PAGE */
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #6A8E86 !important;  /* Teal color matching the logo */
+    border-color: #6A8E86 !important; /* Teal color matching the logo */
+    color: white !important; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #324147 !important; /* Darker shade of teal for hover state */
+    border-color: #324147 !important; /* Darker shade of teal for hover state */
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+    background-color: #F7E9DF; /* Light beige color matching the background */
+    border-color: #F7E9DF; /* Light beige color matching the background */
+    color: #6A8E86; /* Teal text */
+}
+
+.btn-secondary:hover {
+    background-color: #E6D8CD; /* Slightly darker beige for hover state */
+    border-color: #E6D8CD; /* Slightly darker beige for hover state */
+    color: #324147 !important; /* Darker teal text on hover */
+}
+
+/* Add to Cart Button Specific */
+.add-to-cart {
+    background-color: #6A8E86; /* Same teal as primary button */
+    border-color: #6A8E86; /* Same teal as primary button */
+    color: white; /* White text */
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #324147; /* Darker teal for hover */
+    border-color: #324147; /* Darker teal for hover */
+    color: #FFF; /* Keep the text white */
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #6A8E86;
+    border-color: #6A8E86;
+    color: white;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #507C74;
+    border-color: #507C74;
+    color: white;
+}
