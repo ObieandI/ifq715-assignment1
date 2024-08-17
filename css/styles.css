@@ -5,6 +5,10 @@
     display: block;
 }
 
+.sale-product-inner .img-fluid {
+    border-radius: 0 !important;
+}
+
 /* Text Headings */
 h1, h3, h4, h5 {
     color: #324147; /* Dark teal for headings */
@@ -114,12 +118,9 @@ section {
 
 /* Custom Button Styles */
 .btn-custom {
-    background-color: #5A7D7C !important; /* Ocean-inspired green */
-    border-color: #5A7D7C !important; /* Custom border color */
-    color: white !important; /* Text color */
     position: absolute;
     opacity: 75%;
-    bottom: 1.5rem; /* 24px */
+    bottom: 0.1rem; /* 24px */
     transform: translateX(-50%);
     border-radius: 0% !important;
 }
@@ -159,6 +160,18 @@ section {
     width: 100%; /* Ensure the image takes up the full width */
     height: auto;
     display: block;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888; /* Grey for the original price */
+    margin-right: 0.5rem; /* Space between original and sale price */
+}
+
+.sale-price {
+    color: red; /* Red for the sale price */
+    font-weight: bold;
+    font-size: 1.25rem; /* Slightly larger for emphasis */
 }
 
 /* Product Info Section */
@@ -276,17 +289,22 @@ section {
     font-weight: bold;
 }
 
+
+.form-control:focus, .form-select:focus {
+    border-color: #324147 !important; /* Teal color */
+    box-shadow: 0 0 0 0.2rem rgba(106, 142, 134, 0.5) !important; /* This controls the glowing effect */
+    outline: none !important; /* Remove the default outline */
+}
+
+/* .form-control:hover {
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+    border-color: #324147 !important;
+} */
+
 .subscription-btn {
-    background-color: #5A7D7C !important; /* Ocean-inspired green */
-    border-color: #5A7D7C !important;
-    color: white !important; /* White text */
-    padding: 0.75rem; /* 12px */
-    font-size: 1.25rem; /* 20px */
     text-transform: uppercase;
-    border: none;
     width: 100%;
     margin-top: 1.5rem; /* 24px */
-    border-radius: 0.5rem; /* 8px */
 }
 
 .subscription-btn:hover {
@@ -345,7 +363,6 @@ section {
 
 .col-md-6 {
     margin-bottom: 1.25rem; /* 20px */
-    font-size: 0.9rem; /* Slightly smaller font size for better readability */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -436,4 +453,11 @@ section {
 .carousel-control-next:hover .carousel-control-next-icon,
 .carousel-control-prev:hover .carousel-control-prev-icon {
     background-color: #324147 !important; /* Darker shade of teal for hover state */
+}
+
+.add-product {
+    width: 80%;
+    background-color: #F4EFEA;
+    border: 1px solid #e0e0e0; /* Optional: Add a light border */
+    border-radius: 0.25rem; /* Optional: Slightly round the corners */
 }

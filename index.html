@@ -11,7 +11,9 @@
 </head>
 
 <body>
+
     <header>
+        <!-- Nav Section -->
         <nav class="container-fluid fixed-top">
             <div class="row d-flex align-items-center">
                 <div class="d-flex align-items-center px-1 col-2" id="logo">
@@ -19,19 +21,19 @@
                     <img class="brand-image ms-1" src="images/brandName.png" alt="brand name" />
                 </div>
                 <div class="col-6 d-flex">
-                    <ul class="links d-flex">
+                    <ul class="links d-inline-flex navBar">
                         <li class="item"><a class="link" href="/Home/">Home</a></li>
                         <li class="item"><a class="link" href="/Categories/">Categories</a></li>
                         <li class="item"><a class="link" href="/About Us/">About Us</a></li>
                         <li class="item"><a class="link" href="/Contact Us/">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
+                <div class="col-md-4 d-md-flex d-none justify-content-end align-items-center">
                     <div class="input-group me-3" style="max-width: 250px;">
                         <input type="text" class="form-control" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-secondary" type="button">X</button>
                     </div>
-                    <div class="d-md-flex d-none">
+                    <div>
                         <a href="#" class="link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-cart3" viewBox="0 0 16 16">
@@ -46,84 +48,102 @@
     </header>
 
     <main>
-        <section class="container-fluid m-0 text-center position-relative">
+        <section class="m-0 text-center position-relative">
             <img src="images/background3.png" alt="Big image" class="img-fluid pb-4 w-100" id="landing-image" />
-            <button type="button" class="btn-custom btn btn-primary w-100 start-50">Full-Width Button</button>
+            <button type="button" class="btn-custom btn btn-primary w-100 start-50">Explore Our Sale</button>
         </section>
 
+        <!-- Sale Section -->
         <section class="container sale-section w-100">
             <div class="row py-3 ">
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
+                        <h2>Ocean Breeze Bikini</h2>
                         <img src="images/blueBikini.webp" alt="Blue Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Ocean Breeze Triangle Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$69.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
+                        <h2>Azure Waves Bikini</h2>
                         <img src="images/blueBikini3.webp" alt="Blue Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Azure Waves Halter Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$79.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
+                        <h2>Coastal Charm Bikini</h2>
                         <img src="images/blueBikini2.webp" alt="Blue Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Coastal Charm Bandeau Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$74.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
                 </div>
             </div>
             <div class="row py-3 ">
-
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
-                        <img src="images/tealBikini.webp" alt="Blue Bikini image" class="img-fluid" />
+                        <h2>Tropical Tide Bikini</h2>
+                        <img src="images/tealBikini.webp" alt="Teal Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Tropical Tide Crossback Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$69.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
-                        <img src="images/yellowBikini.webp" alt="Blue Bikini image" class="img-fluid" />
+                        <h2>Sunny Delight Bikini</h2>
+                        <img src="images/yellowBikini.webp" alt="Yellow Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Sunny Delight Ruffled Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$64.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="sale-product-inner">
-                        <h2> Bikini Name </h2>
-                        <img src="images/orangeBikini3.webp" alt="Blue Bikini image" class="img-fluid" />
+                        <h2>Sunset Glow Bikini</h2>
+                        <img src="images/orangeBikini3.webp" alt="Orange Bikini image" class="img-fluid" />
                         <div class="product-info">
                             <p class="product-color">1 Colour</p>
-                            <h3 class="product-title">The Coast Is Calling Mila Bralette Bikini Top</h3>
-                            <p class="product-price">$69.99</p>
+                            <h3 class="product-title">Sunset Glow Wrap Bikini</h3>
+                            <p class="product-price">
+                                <span class="original-price">$119.99</span>
+                                <span class="sale-price">$69.99</span>
+                            </p>
                         </div>
                         <button class="btn btn-primary btn-sale">Find Out More</button>
                     </div>
@@ -131,9 +151,10 @@
             </div>
         </section>
 
+        <!-- Categories -->
         <section class="categories-section container-fluid py-5">
             <div class="row justify-content-center">
-                <!-- First Category -->
+                <!-- Swimwear Category -->
                 <div class="col-md-5 mb-4">
                     <div class="category-item">
                         <img src="images/whiteBikini.webp" alt="Category 1 Image" class="img-fluid">
@@ -141,7 +162,7 @@
                         <button class="btn btn-category">Shop Now</button>
                     </div>
                 </div>
-                <!-- Second Category -->
+                <!-- Accessories Category -->
                 <div class="col-md-5 mb-4">
                     <div class="category-item">
                         <img src="images/accessory2.webp" alt="Category 2 Image" class="img-fluid">
@@ -152,6 +173,7 @@
             </div>
         </section>
 
+        <!-- About Us Section -->
         <section class="about-us">
             <div class="container">
                 <div class="row align-items-center">
@@ -183,6 +205,7 @@
             </div>
         </section>
 
+        <!-- Subscription Section -->
         <section class="subscription-section text-center py-5">
             <div class="container">
                 <h2 class="subscription-title">Be Our Bae</h2>
@@ -215,8 +238,63 @@
                 </form>
             </div>
         </section>
+
+        <!-- Modal Section -->
+        <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title subscription-title" id="subscriptionModalLabel">Be Our Bae</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="subscription-form mx-auto">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Surname" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" placeholder="+61 412 345 678">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" placeholder="Birthday DD/MM/YYYY">
+                                </div>
+                            </div>
+                            <p class="disclaimer">*By providing BaeShore Boutique your contact information, you consent
+                                to
+                                receiving all email and mobile marketing communications.</p>
+                            <button type="submit" class="btn btn-primary btn-block subscription-btn">Join The
+                                Family</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- I didn't know how to make the model pop up without clicking on a button and I also wanted a subscribe section at the end of the page. -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var myModal = new bootstrap.Modal(document.getElementById('subscriptionModal'), {
+                    backdrop: 'static', // Prevent closing by clicking outside the modal
+                    keyboard: false // Prevent closing with the escape key
+                });
+                myModal.show();
+            });
+        </script>
     </main>
 
+    <!-- Footer -->
     <footer class="container-fluid p-4 text-center footer-section">
         <div class="d-flex align-items-center justify-content-start justify-content-sm-center ">
             <ul class="links">
@@ -230,6 +308,7 @@
             <p class="paragraph">&copy; 1981, BaeShore</p>
         </div>
     </footer>
+
 </body>
 
 </html>
